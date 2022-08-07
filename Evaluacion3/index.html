@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="firefox">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login \Evaluación 3</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+
+        <div class="formulario" id="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" name="" id="usuario1" placeholder="Usuario" required>
+                <input type="password" name="" id="contraseña1" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+
+        <div class="formulario" id="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#">
+                <input type="text" name="" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="" id="apellido" placeholder="Apellido" required>
+                <input type="text" name="" id="usuario" placeholder="Usuario" pattern="(@)([a-z]).{4,}" title="Debe contener como minimo 5 letras y un @" required>
+                <input type="email" name="" id="email" placeholder="Correo" required>
+                <input type="password" name="" id="contraseña" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres" required>
+                <input type="text" name="" id="edad" placeholder="Edad" required>
+                <input type="text" name="" id="telefono" placeholder="Telefono" required>
+                <input type="text" name="" id="direccion" placeholder="Dirección" required>
+                <input type="submit" value="Registrarse">
+                <p class="warnings" id="warnings"></p>
+            </form>
+        </div>
+
+        <div class="reset-password">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/App.js"></script>
+</body>
+</html>
